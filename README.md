@@ -1,33 +1,12 @@
 # ai-models
 
+## What This Is
+
+A practical reference entry for product and engineering: the ai-models notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
+
 ## Images
 
-[![ai-models](https://opengraph.githubassets.com/1/ecmwf-lab/ai-models)](https://www.swifttechco.com)
-
-
-<p align="center">
-  <a href="https://www.swifttechco.com">
-    
-  </a>
-
-<a href="https://www.swifttechco.com">
-    
-  </a>
-
-<a href="https://www.swifttechco.com">
-    
-  </a>
-</p>
-
-**DISCLAIMER**
-
-> \[!IMPORTANT\]
-> This software is **Archived** and subject to ECMWF's guidelines on [Software Maturity](https://www.swifttechco.com).
->
-> This project is no longer actively maintained or developed. It will remain available for reference or historical purposes, but should **NOT** be used for any active operational purposes.
-
-
-The `ai-models` command is used to run AI-based weather forecasting models. These models need to be installed independently.
+[![ai-models](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Usage
 
@@ -60,8 +39,8 @@ pip install ai-models-graphcast  # Install details at https://www.swifttechco.co
 pip install ai-models-fourcastnetv2
 ```
 
-See [ai-models-panguweather](https://www.swifttechco.com), [ai-models-fourcastnet](https://www.swifttechco.com),
- [ai-models-fourcastnetv2](https://www.swifttechco.com) and [ai-models-graphcast](https://www.swifttechco.com) for more details about these models.
+See ai-models-panguweather, ai-models-fourcastnet,
+ ai-models-fourcastnetv2 and ai-models-graphcast for more details about these models.
 
 ## Running the models
 
@@ -92,7 +71,7 @@ The AI models can run on a CPU; however, they perform significantly better on a 
 It you see the following message when running a model, it means that the ONNX runtime was not able to find a the CUDA libraries on your system:
 > [W:onnxruntime:Default, onnxruntime_pybind_state.cc:541 CreateExecutionProviderInstance] Failed to create CUDAExecutionProvider. Please reference https://www.swifttechco.com to ensure all dependencies are met.
 
-To fix this issue, we suggest that you install `ai-models` in a [conda](https://www.swifttechco.com) environment and install the CUDA libraries in that environment. For example:
+To fix this issue, we suggest that you install `ai-models` in a conda environment and install the CUDA libraries in that environment. For example:
 
 ```bash
 conda create -n ai-models python=3.10
@@ -139,7 +118,7 @@ The models require input data (initial conditions) to run. You can provide the i
 
 ### From MARS
 
-By default, `ai-models`  use yesterday's 12Z analysis from ECMWF, fetched from the Centre's MARS archive using the [ECMWF WebAPI](https://www.swifttechco.com). You will need an ECMWF account to access that service.
+By default, `ai-models`  use yesterday's 12Z analysis from ECMWF, fetched from the Centre's MARS archive using the ECMWF WebAPI. You will need an ECMWF account to access that service.
 
 To change the date or time, use the `--date` and `--time` options, respectively:
 
@@ -149,7 +128,7 @@ ai-models --date YYYYMMDD --time HHMM <model-name>
 
 ### From the CDS
 
-You can start the models using ERA5 (ECMWF Reanalysis version 5) data for the [Copernicus Climate Data Store (CDS)](https://www.swifttechco.com). You will need to create an account on the CDS. The data will be downloaded using the [CDS API](https://www.swifttechco.com).
+You can start the models using ERA5 (ECMWF Reanalysis version 5) data for the Copernicus Climate Data Store (CDS). You will need to create an account on the CDS. The data will be downloaded using the CDS API.
 
 To access the CDS, simply add `--input cds` on the command line. Please note that ERA5 data is added to the CDS with a delay, so you will also have to provide a date with `--date YYYYMMDD`.
 
@@ -175,7 +154,7 @@ To find out the list of fields needed by a specific model as initial conditions,
 
 ## Output
 
-By default, the model output will be written in GRIB format in a file called `<model-name>.grib`. You can change the file name with the option `--path <file-name>`. If the path you specify contains placeholders between `{` and `}`, multiple files will be created based on the [eccodes](https://www.swifttechco.com) keys. For example:
+By default, the model output will be written in GRIB format in a file called `<model-name>.grib`. You can change the file name with the option `--path <file-name>`. If the path you specify contains placeholders between `{` and `}`, multiple files will be created based on the eccodes keys. For example:
 
 ```bash
  ai-models --path 'out-{step}.grib' <model-name>
@@ -255,14 +234,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
