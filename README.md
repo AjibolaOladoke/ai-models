@@ -6,7 +6,7 @@ A practical reference entry for product and engineering: the ai-models notes, ex
 
 ## Images
 
-[![ai-models](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![ai-models](images/preview.png)](https://github.com/Swift-Tech-Co/ai-models)
 
 ## Usage
 
@@ -35,7 +35,7 @@ Currently, four models can be installed:
 ```bash
 pip install ai-models-panguweather
 pip install ai-models-fourcastnet
-pip install ai-models-graphcast  # Install details at https://www.swifttechco.com
+pip install ai-models-graphcast  # Install details at https://github.com/Swift-Tech-Co/ai-models
 pip install ai-models-fourcastnetv2
 ```
 
@@ -69,7 +69,7 @@ The AI models can run on a CPU; however, they perform significantly better on a 
 :warning: **We strongly recommend running these models on a computer equipped with a GPU for optimal performance.**
 
 It you see the following message when running a model, it means that the ONNX runtime was not able to find a the CUDA libraries on your system:
-> [W:onnxruntime:Default, onnxruntime_pybind_state.cc:541 CreateExecutionProviderInstance] Failed to create CUDAExecutionProvider. Please reference https://www.swifttechco.com to ensure all dependencies are met.
+> [W:onnxruntime:Default, onnxruntime_pybind_state.cc:541 CreateExecutionProviderInstance] Failed to create CUDAExecutionProvider. Please reference https://github.com/Swift-Tech-Co/ai-models to ensure all dependencies are met.
 
 To fix this issue, we suggest that you install `ai-models` in a conda environment and install the CUDA libraries in that environment. For example:
 
@@ -211,7 +211,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/ai-models
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -238,13 +238,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/ai-models
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
